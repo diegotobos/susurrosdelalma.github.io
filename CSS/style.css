@@ -68,3 +68,16 @@ body {
     display: block; /* Mostramos los enlaces de navegación en pantallas pequeñas */
   }
 }
+
+#audio-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+#mute-svg {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
