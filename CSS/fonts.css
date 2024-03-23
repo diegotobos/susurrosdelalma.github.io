@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Rokkitt';
+    src: url('/fonts/Rokkitt-Regular.ttf') format('ttf'); /* Formato WOFF2 para navegadores modernos */
+    /* Puedes añadir más formatos de fuente aquí si es necesario */
+    font-weight: normal; /* Peso de la fuente normal */
+    font-style: normal; /* Estilo de la fuente normal */
+  }
+
+  @font-face {
+    font-family: 'Rokkitt-Light';
+    src: url('/fonts/Rokkitt-Light.ttf') format('ttf'); /* Formato WOFF2 para navegadores modernos */
+    /* Puedes añadir más formatos de fuente aquí si es necesario */
+    font-weight: normal; /* Peso de la fuente normal */
+    font-style: normal; /* Estilo de la fuente normal */
+  }
+
+  @font-face {
+    font-family: 'Rokkitt-extrabold';
+    src: url('/fonts/Rokkitt-ExtraBold.ttf') format('ttf'); /* Formato WOFF2 para navegadores modernos */
+    /* Puedes añadir más formatos de fuente aquí si es necesario */
+    font-weight: normal; /* Peso de la fuente normal */
+    font-style: normal; /* Estilo de la fuente normal */
+  }

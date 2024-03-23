@@ -1,65 +1,51 @@
+
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px),
+    radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
 
-  .poem-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    position: relative; /* Agregamos posición relativa al contenedor */
-  }
+.poem-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative; /* Agregamos posición relativa al contenedor */
+}
 
-  .poem-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+.poem-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Rokkitt-extrabold';
+}
 
-  .poem-content {
-    margin-bottom: 20px;
-  }
+.poem-content {
+  margin-bottom: 20px;
+  font-family: 'Rokkitt';
+}
 
-  .poem-author {
-    font-style: italic;
-    margin-bottom: 10px;
-    color: #494848;
-  }
+.poem-author {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #494848;
+}
 
-  .poem-date {
-    font-size: 14px;
-    color: #a1a1a1;
-    margin-bottom: 20px;
-  }
+.description{
+  font-family: 'Rokkitt-light';
+}
 
-
-  .navigation-links {
-    display: none; /* Ocultamos los enlaces de navegación por defecto */
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-
-  .navigation-links a {
-    margin: 0 20px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
-    font-size: 20px;
-    display: inline-block;
-  }
+.poem-date {
+  font-size: 14px;
+  color: #a1a1a1;
+  margin-bottom: 20px;
+}
 
 
-  
-  @media (max-width: 768px) {
-    .poem-container {
-      padding-bottom: 50px; /* Espacio para los enlaces de navegación */
-    }
 
-    .navigation-links {
-      display: block; /* Mostramos los enlaces de navegación en pantallas pequeñas */
-    }
-  }
