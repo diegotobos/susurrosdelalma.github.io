@@ -1,85 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contradicciones del amor</title>
-    <link rel="stylesheet" href="CSS/poemas.css">
-    <link rel="shortcut icon" href="https://i.pinimg.com/564x/ff/61/ad/ff61ad9ba97c12ce1886893da23e8bed.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
-</head>
-<body class="bg-white text-black">
+    <link rel="stylesheet" href="CSS/poemas.css" />
+    <link
+      rel="shortcut icon"
+      href="https://i.pinimg.com/564x/ff/61/ad/ff61ad9ba97c12ce1886893da23e8bed.jpg"
+    />
+  </head>
+  <body class="bg-white text-black w-100">
+    <div
+      class="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+    ></div>
 
-  <div class="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-    
     <div class="poem-container">
-        <div class="poem-content">
-          <h1 class="poem-title">Contradicciones del Amor </h1>
-          <p class="poem-content">
-           Detesto que me gustes tanto, <br>
-           y sin embargo amarte es mi deseo más profundo, <br>
-           disfruto pensarte en la noches, <br>
-           mientras mi corazón se deshace, <br>
-           embriagado a causa de tus recuerdos.</p>
-           <p class="poem-content">
-            Aborrezco esta melancolia que a mi alma agobia, <br>
-            Mi corazón queda en silencio ante este sentimiento que quema mi garganta, <br>
-            Anhelo despojarme de este sentimiento que a mi ser aprisiona, <br>
-            Pero deseo quedarme con él toda una vida, <br>
-           </p>
-           <p class="poem-content">
-            Pero recuerda, que aun por ti mi corazon late con fuerza, <br>
-            que no me importa esperarte una vida, <br>
-            si al final logro ser feliz, <br>
-            Saber que este sentimiento, mortal quizas, no me inquieta, <br>
-            pues se que tras la muerte, podre seguir amandote.
-           </p>
-          <div class="poem-author">
-            <div class="flex items-center gap-4">
-                <img class="shadow-2xl w-10 h-10 rounded-full" src="https://i.pinimg.com/564x/a6/1e/d9/a61ed957a9ff8e0399ae56a0db9c6747.jpg" alt="">
-                <div class="font-medium dark:text-black">
-                    <div class="not-italic">Diego Tobos</div>
-                    <div class="text-sm text-gray-500 dark:text-gray-400">"La melancolía es la felicidad de estar triste." - Victor Hugo</div>
-                </div>
+      <div class="poem-content">
+        <h1 class="poem-title">Contradicciones del Amor</h1>
+        <p class="poem-content">
+          Detesto que me gustes tanto, <br />
+          y sin embargo amarte es mi deseo más profundo, <br />
+          disfruto pensarte en la noches, <br />
+          mientras mi corazón se deshace, <br />
+          embriagado a causa de tus recuerdos.
+        </p>
+        <p class="poem-content">
+          Aborrezco esta melancolia que a mi alma agobia, <br />
+          Mi corazón queda en silencio ante este sentimiento que quema mi
+          garganta, <br />
+          Anhelo despojarme de este sentimiento que a mi ser aprisiona, <br />
+          Pero deseo quedarme con él toda una vida, <br />
+        </p>
+        <p class="poem-content">
+          Pero recuerda, que aun por ti mi corazon late con fuerza, <br />
+          que no me importa esperarte una vida, <br />
+          si al final logro ser feliz, <br />
+          Saber que este sentimiento, mortal quizas, no me inquieta, <br />
+          pues se que tras la muerte, podre seguir amandote.
+        </p>
+        <div class="poem-author">
+          <div class="flex items-center gap-4">
+            <img
+              class="shadow-2xl w-10 h-10 rounded-full"
+              src="https://i.pinimg.com/564x/a6/1e/d9/a61ed957a9ff8e0399ae56a0db9c6747.jpg"
+              alt=""
+            />
+            <div class="font-medium dark:text-black">
+              <div class="not-italic">Diego Tobos</div>
+              <div class="text-sm text-gray-500 dark:text-gray-400">
+                "La melancolía es la felicidad de estar triste." - Victor Hugo
+              </div>
             </div>
-            </div>
-          <div class="poem-date">
+          </div>
+        </div>
+        <div class="poem-date">
           <span
             class="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10 absolute bottom- left-80"
-            >16/03/2024 11:24 PM</span
-          >
-          <br>
+            ><p>Publicado <span id="hora-relativa"></span></p>
+          </span>
+          <br />
         </div>
-        </div>
-
-
-        <div class="navigation-links">
-            <a href="index.html"><svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="5" height="5" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
-            </svg>
-            </a>
-            <a href="#"><svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="5" height="5" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
-            </svg>
-            </a>
-          </div>
-
       </div>
 
+      <div class="navigation-links">
+        <a href="index.html"
+          ><svg
+            class="w-6 h-6 text-gray-800 dark:text-black"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="5"
+            height="5"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 12h14M5 12l4-4m-4 4 4 4"
+            />
+          </svg>
+        </a>
+        <a href="#"
+          ><svg
+            class="w-6 h-6 text-gray-800 dark:text-black"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="5"
+            height="5"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 12H5m14 0-4 4m4-4-4-4"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
 
-    
-      <script>
-       document.addEventListener('keydown', function(event) {
-          if (event.altKey && (event.key === 'l' || event.key === 'r')) {
-            if (event.key === 'l') {
-              window.location.href = '/index.html';
-            } else if (event.key === 'r') {
-              window.location.href = '/odioquemegustestanto.html';
-            }
+    <script>
+      document.addEventListener("keydown", function (event) {
+        if (event.altKey && (event.key === "l" || event.key === "r")) {
+          if (event.key === "l") {
+            window.location.href = "/index.html";
+          } else if (event.key === "r") {
+            window.location.href = "/odioquemegustestanto.html";
           }
-        });
-      </script>
+        }
+      });
+    </script>
 
-<script src="https://cdn.tailwindcss.com"></script>
-</body>
+<script>
+  function calcularHoraRelativa(fechaPublicacion) {
+    const horaActual = new Date();
+    const horaPublicacion = new Date(fechaPublicacion);
+    const diferencia = horaActual - horaPublicacion;
+    const segundos = Math.floor(diferencia / 1000);
+    const minutos = Math.floor(segundos / 60);
+    const horas = Math.floor(minutos / 60);
+
+    if (horas > 0) {
+      return `hace ${horas} ${horas === 1 ? 'hora' : 'horas'}`;
+    } else if (minutos > 0) {
+      return `hace ${minutos} ${minutos === 1 ? 'minuto' : 'minutos'}`;
+    } else {
+      return 'hace unos segundos';
+    }
+  }
+
+  // Simular la fecha de publicación (puedes reemplazar esto por la fecha real)
+  const fechaPublicacion = '2024-03-22T08:25:00Z'; // Formato: 'YYYY-MM-DDTHH:mm:ssZ'
+
+  function actualizarHoraRelativa() {
+    const horaRelativa = calcularHoraRelativa(fechaPublicacion);
+    document.getElementById('hora-relativa').textContent = horaRelativa;
+  }
+
+  setInterval(actualizarHoraRelativa, 60000); // Actualizar cada minuto (60000 milisegundos)
+  actualizarHoraRelativa(); // Actualizar al cargar la página
+</script>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
 </html>
