@@ -44,7 +44,7 @@
           <div class="flex items-center gap-4">
             <img
               class="shadow-2xl w-10 h-10 rounded-full"
-              src="https://i.pinimg.com/564x/d5/7f/16/d57f166e983fe9ad5a1c9a6f01fa9bd9.jpg"
+              src="https://i.pinimg.com/564x/a6/1e/d9/a61ed957a9ff8e0399ae56a0db9c6747.jpg"
               alt=""
             />
             <div class="font-medium dark:text-black">
@@ -55,16 +55,16 @@
             </div>
           </div>
         </div>
-        <div class="poem-date">
-          <span
-            class="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10 absolute"
-            ><p>Publicado <span id="hora-relativa"></span></p>
+        <div class="poem-date" title="">
+          <span class="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10 absolute">
+              <p><span id="hora-relativa"></span></p>
           </span>
-          <br />
-        </div>
+          <br>
+      </div>
+  
       </div>
  
-      <div class="max-w-screen-xl mx-auto mt-12 px-2 text-gray-600 md:px-8">
+      <div class="max-w-screen-xl mx-auto mt-12 px-2 text-gnpmray-600 md:px-8">
         <div class="flex items-center justify-between text-sm text-gray-600 font-medium">
             <a href="index.html" class="px-4 py-2 border rounded-lg duration-150 hover:bg-gray-50 hover:text-black">Previous</a>
             <div class="text-black">
@@ -89,45 +89,25 @@
       });
     </script>
 
-    <script>
-      function calcularHoraRelativa(fechaPublicacion) {
-        const horaActual = new Date();
-        const horaPublicacion = new Date(fechaPublicacion);
-        const diferencia = horaActual - horaPublicacion;
-        const segundos = Math.floor(diferencia / 1000);
-        const minutos = Math.floor(segundos / 60);
-        const horas = Math.floor(minutos / 60);
-        const dias = Math.floor(horas / 24);
+<script>
+  // Definimos la fecha inicial
+  const fechaInicial = new Date('2024-03-16T23:24:00');
 
-        if (dias > 0) {
-          const horasRestantes = horas % 24;
-          if (horasRestantes > 0) {
-            return `hace ${dias} ${
-              dias === 1 ? "día" : "días"
-            } y ${horasRestantes} ${horasRestantes === 1 ? "hora" : "horas"}`;
-          } else {
-            return `hace ${dias} ${dias === 1 ? "día" : "días"}`;
-          }
-        } else if (horas > 0) {
-          return `hace ${horas} ${horas === 1 ? "hora" : "horas"}`;
-        } else if (minutos > 0) {
-          return `hace ${minutos} ${minutos === 1 ? "minuto" : "minutos"}`;
-        } else {
-          return "hace unos segundos";
-        }
-      }
+  // Actualizamos el contador de tiempo cada segundo
+  setInterval(() => {
+      // Calculamos la diferencia de tiempo entre la fecha actual y la fecha inicial
+      const differencia = new Date() - fechaInicial;
 
-      // Fecha de publicación: 16/03/2024 11:24 pm (formato: 'YYYY-MM-DDTHH:mm:ssZ')
-      const fechaPublicacion = "2024-03-16T23:24:00Z";
+      // Calculamos los días y las horas que han pasado
+      const dias = Math.floor(differencia / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((differencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
-      function actualizarHoraRelativa() {
-        const horaRelativa = calcularHoraRelativa(fechaPublicacion);
-        document.getElementById("hora-relativa").textContent = horaRelativa;
-      }
+      // Mostramos el resultado en el elemento con el id 'hora-relativa'
+      document.getElementById('hora-relativa').textContent = `hace ${dias} días y ${horas} horas`;
+  }, 1000);
+</script>
 
-      setInterval(actualizarHoraRelativa, 60000); // Actualizar cada minuto (60000 milisegundos)
-      actualizarHoraRelativa(); // Actualizar al cargar la página
-    </script>
+
 
     <script src="https://cdn.tailwindcss.com"></script>
   </body>
