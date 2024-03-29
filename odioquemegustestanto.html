@@ -44,7 +44,7 @@
           <div class="flex items-center gap-4">
             <img
               class="shadow-2xl w-10 h-10 rounded-full"
-              src="https://i.pinimg.com/474x/9f/74/83/9f74836ec4d1fc061a5a7bcf659f9c05.jpg"
+              src="https://i.pinimg.com/564x/a6/1e/d9/a61ed957a9ff8e0399ae56a0db9c6747.jpg"
               alt=""
             />
             <div class="font-medium dark:text-black">
@@ -79,7 +79,7 @@
 
     <script>
       document.addEventListener("keydown", function (event) {
-        if (event.altKey && (event.key === "l" || event.key === "r")) {
+        if (event.ctrlKey && (event.key === "l" || event.key === "r")) {
           if (event.key === "l") {
             window.location.href = "/index.html";
           } else if (event.key === "r") {
@@ -107,6 +107,28 @@
   }, 1000);
 </script>
 
+<script>
+  function cargarFuentes() {
+  var fuente1 = new FontFace('Rokkitt-ExtraBold', 'url("/fonts/Rokkitt-ExtraBold.woff2") format("woff2")');
+  var fuente2 = new FontFace('Rokkitt-Light', 'url("/fonts/Rokkitt-Light.woff2") format("woff2")');
+  var fuente3 = new FontFace('Rokkitt-Regular', 'url("/fonts/Rokkitt-Regular.woff2") format("woff2")');
+
+  Promise.all([fuente1.load(), fuente2.load(), fuente3.load()])
+    .then(function() {
+      document.fonts.add(Rokkitt-ExtraBold);
+      document.fonts.add(Rokkitt-Light);
+      document.fonts.add(Rokkitt-Regular);
+      console.log('Fuentes cargadas correctamente.');
+    })
+    .catch(function(error) {
+      console.error('Error al cargar las fuentes:', error);
+    });
+}
+
+// Llamar a la función para cargar las fuentes
+cargarFuentes();
+
+</script>
 
 
     <script src="https://cdn.tailwindcss.com"></script>
