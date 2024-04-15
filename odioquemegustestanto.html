@@ -58,7 +58,7 @@
         </div>
         <div class="poem-date" title="">
           <span class="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10 absolute">
-              <p><span id="hora-relativa"></span></p>
+              <p>16/03/2024 11:53PM</p>
           </span>
           <br>
       </div>
@@ -90,23 +90,6 @@
       });
     </script>    
 
-<script>
-  // Definimos la fecha inicial
-  const fechaInicial = new Date('2024-03-16T23:24:00');
-
-  // Actualizamos el contador de tiempo cada segundo
-  setInterval(() => {
-      // Calculamos la diferencia de tiempo entre la fecha actual y la fecha inicial
-      const differencia = new Date() - fechaInicial;
-
-      // Calculamos los días y las horas que han pasado
-      const dias = Math.floor(differencia / (1000 * 60 * 60 * 24));
-      const horas = Math.floor((differencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-      // Mostramos el resultado en el elemento con el id 'hora-relativa'
-      document.getElementById('hora-relativa').textContent = `hace ${dias} días y ${horas} horas`;
-  }, 1000);
-</script>
 
 <script>
   function cargarFuentes() {
